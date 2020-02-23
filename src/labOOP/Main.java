@@ -65,8 +65,10 @@ public class Main extends Application {
         try {
             var fis = new FileInputStream(f);
             var oos = new ObjectInputStream(fis);
-            shapesList = (ShapesList) oos.readObject();
-            shapesList.draw(gc);
+
+            var newShapesList = (ShapesList) oos.readObject();
+            newShapesList.shapesList.forEach(shape -> shapesList.add(shape, gc));
+
         } catch (Exception e) {
             var a = 5;
         }

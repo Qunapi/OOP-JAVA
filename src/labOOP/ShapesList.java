@@ -8,11 +8,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ShapesList implements Serializable {
-    private List<Shape> shapesList;
+    public List<Shape> shapesList;
 
     ShapesList(GraphicsContext gc) {
         shapesList = new ArrayList<Shape>();
     }
+
+
 
     public void draw(GraphicsContext gc) {
         gc.clearRect(0,0,2000,2000);
