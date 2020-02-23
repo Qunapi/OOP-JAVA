@@ -1,17 +1,15 @@
 package labOOP.shapes;
 
-import javafx.geometry.Point2D;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 import labOOP.ShapesList;
 
-import java.util.List;
 
 public class CircleCreator extends ShapeCreator {
 
     enum State {waiting, centerSet}
 
-    private Point2D center;
+    private Point center;
     private State state;
     private String name = "Circle";
 
@@ -28,7 +26,7 @@ public class CircleCreator extends ShapeCreator {
     public void dispatch(MouseEvent e) {
         switch (state) {
             case waiting: {
-                center = new Point2D(e.getX(), e.getY());
+                center = new Point(e.getX(), e.getY());
                 state = State.centerSet;
                 break;
             }
@@ -37,7 +35,7 @@ public class CircleCreator extends ShapeCreator {
                 var y = e.getY();
                 var radius = (int) Math.sqrt(Math.pow(center.getX() - x, 2) + Math.pow(center.getY() - y, 2));
                 var shape = new Circle(center, radius, gc);
-                shapeList.add(shape);
+                shapeList.add(shape, gc);
                 state = State.waiting;
                 break;
             }

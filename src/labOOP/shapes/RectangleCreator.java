@@ -1,17 +1,14 @@
 package labOOP.shapes;
 
-import javafx.geometry.Point2D;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 import labOOP.ShapesList;
-
-import java.util.List;
 
 public class RectangleCreator extends ShapeCreator {
 
     enum State {waiting, firstPointSet}
 
-    private Point2D firstPoint, secondPoint;
+    private Point firstPoint, secondPoint;
     private State state;
     private String name = "Rectangle";
 
@@ -28,14 +25,14 @@ public class RectangleCreator extends ShapeCreator {
     public void dispatch(MouseEvent e) {
         switch (state) {
             case waiting: {
-                firstPoint = new Point2D(e.getX(), e.getY());
+                firstPoint = new Point(e.getX(), e.getY());
                 state = State.firstPointSet;
                 break;
             }
             case firstPointSet: {
-                secondPoint = new Point2D(e.getX(), e.getY());
+                secondPoint = new Point(e.getX(), e.getY());
                 var shape = new Rectangle(firstPoint, secondPoint, gc);
-                shapeList.add(shape);
+                shapeList.add(shape, gc);
                 state = State.waiting;
                 break;
             }

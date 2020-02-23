@@ -26,6 +26,6 @@ public class ShapesSelector extends ArrayList<Shape> {
     }
 
     public void dispatch(MouseEvent e) {
-        selectedShapeCreator.dispatch(e);
+        if (selectedShapeCreator != null) selectedShapeCreator.dispatch(e);
     }
 }
