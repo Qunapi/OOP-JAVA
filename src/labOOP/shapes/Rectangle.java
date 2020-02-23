@@ -6,7 +6,7 @@ import javafx.scene.canvas.GraphicsContext;
 public class Rectangle implements Shape {
     private Point firstPoint, secondPoint;
 
-    public Rectangle(Point firstPoint, Point secondPoint, GraphicsContext gc){
+    public Rectangle(Point firstPoint, Point secondPoint){
         this.firstPoint = firstPoint;
         this.secondPoint = secondPoint;
     }

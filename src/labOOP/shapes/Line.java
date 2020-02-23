@@ -5,7 +5,7 @@ import javafx.scene.canvas.GraphicsContext;
 public class Line implements Shape {
     private Point firstPoint, secondPoint;
 
-    public Line(Point firstPoint, Point secondPoint, GraphicsContext gc) {
+    public Line(Point firstPoint, Point secondPoint) {
         this.firstPoint = firstPoint;
         this.secondPoint = secondPoint;
     }

@@ -31,7 +31,7 @@ public class RectangleCreator extends ShapeCreator {
             }
             case firstPointSet: {
                 secondPoint = new Point(e.getX(), e.getY());
-                var shape = new Rectangle(firstPoint, secondPoint, gc);
+                var shape = new Rectangle(firstPoint, secondPoint);
                 shapeList.add(shape, gc);
                 state = State.waiting;
                 break;

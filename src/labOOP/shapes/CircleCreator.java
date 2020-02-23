@@ -34,7 +34,7 @@ public class CircleCreator extends ShapeCreator {
                 var x = e.getX();
                 var y = e.getY();
                 var radius = (int) Math.sqrt(Math.pow(center.getX() - x, 2) + Math.pow(center.getY() - y, 2));
-                var shape = new Circle(center, radius, gc);
+                var shape = new Circle(center, radius);
                 shapeList.add(shape, gc);
                 state = State.waiting;
                 break;

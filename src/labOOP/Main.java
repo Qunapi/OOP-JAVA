@@ -52,6 +52,7 @@ public class Main extends Application {
         shapesMenuList.addShape(new CircleCreator(gc, shapesList));
         shapesMenuList.addShape(new RectangleCreator(gc, shapesList));
         shapesMenuList.addShape(new LineCreator(gc, shapesList));
+        shapesMenuList.addShape(new TrapeziumCreator(gc, shapesList));
 
         menuBar.getMenus().addAll(shapesMenu, serializationMenu);
         borderPane.setTop(menuBar);
