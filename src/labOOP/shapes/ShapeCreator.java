@@ -8,8 +8,12 @@ import java.util.List;
 
 public abstract class ShapeCreator {
     protected GraphicsContext gc;
-    protected String name;
+    protected String name = "Name";
     protected List<Shape> shapeList;
+
+    public String getName(){
+        return this.name;
+    };
 
     ShapeCreator(GraphicsContext context, List<Shape> shapeList) {
         gc = context;

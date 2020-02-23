@@ -13,7 +13,11 @@ public class CircleCreator extends ShapeCreator {
 
     private Point2D center;
     private State state;
+    private String name = "Circle";
 
+    public String getName() {
+        return name;
+    }
 
     public CircleCreator(GraphicsContext gc, ShapesList shapeList) {
         super(gc, shapeList);

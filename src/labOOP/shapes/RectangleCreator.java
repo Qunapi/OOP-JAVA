@@ -13,6 +13,11 @@ public class RectangleCreator extends ShapeCreator {
 
     private Point2D firstPoint, secondPoint;
     private State state;
+    private String name = "Rectangle";
+
+    public String getName() {
+        return name;
+    }
 
     public RectangleCreator(GraphicsContext gc, ShapesList shapeList) {
         super(gc, shapeList);

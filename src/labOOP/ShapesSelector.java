@@ -18,7 +18,7 @@ public class ShapesSelector extends ArrayList<Shape> {
     }
 
     public void addShape(ShapeCreator shapeCreator) {
-        var menuItem = new MenuItem(shapeCreator.getClass().getSimpleName());
+        var menuItem = new MenuItem(shapeCreator.getName());
         menuItems.add(menuItem);
         menuItem.setOnAction((event) -> {
             selectedShapeCreator = shapeCreator;

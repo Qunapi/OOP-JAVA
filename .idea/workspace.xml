@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/labOOP/ShapesList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labOOP/ShapesSelector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labOOP/labOOP.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labOOP/shapes/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labOOP/shapes/CircleCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labOOP/shapes/Line.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labOOP/shapes/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labOOP/shapes/RectangleCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labOOP/shapes/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labOOP/shapes/ShapeCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ant.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/labOOP/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/labOOP/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/labOOP/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/labOOP/ShapesSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/labOOP/ShapesSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/labOOP/shapes/CircleCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/labOOP/shapes/CircleCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/labOOP/shapes/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/labOOP/shapes/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/labOOP/shapes/LineCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/labOOP/shapes/LineCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/labOOP/shapes/RectangleCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/labOOP/shapes/RectangleCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/labOOP/shapes/ShapeCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/labOOP/shapes/ShapeCreator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +206,7 @@
       <workItem from="1582392312440" duration="8654000" />
       <workItem from="1582441110677" duration="108000" />
       <workItem from="1582441238102" duration="5639000" />
-      <workItem from="1582462566322" duration="4777000" />
+      <workItem from="1582462566322" duration="5836000" />
     </task>
     <servers />
   </component>
@@ -241,22 +234,22 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="731" y="447" width="518" height="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/70.27.1850.1053@70.27.1850.1053" timestamp="1582441322647" />
-    <state width="1804" height="275" key="GridCell.Tab.0.bottom" timestamp="1582467274665">
+    <state width="1804" height="275" key="GridCell.Tab.0.bottom" timestamp="1582468406678">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="275" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1582467274665" />
-    <state width="1804" height="275" key="GridCell.Tab.0.center" timestamp="1582467274664">
+    <state width="1804" height="275" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1582468406678" />
+    <state width="1804" height="275" key="GridCell.Tab.0.center" timestamp="1582468406678">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="275" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1582467274664" />
-    <state width="1804" height="275" key="GridCell.Tab.0.left" timestamp="1582467274664">
+    <state width="1804" height="275" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1582468406678" />
+    <state width="1804" height="275" key="GridCell.Tab.0.left" timestamp="1582468406677">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="275" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1582467274664" />
-    <state width="1804" height="275" key="GridCell.Tab.0.right" timestamp="1582467274664">
+    <state width="1804" height="275" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1582468406677" />
+    <state width="1804" height="275" key="GridCell.Tab.0.right" timestamp="1582468406678">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="275" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1582467274664" />
+    <state width="1804" height="275" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1582468406678" />
     <state width="1804" height="340" key="GridCell.Tab.1.bottom" timestamp="1582467074574">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>

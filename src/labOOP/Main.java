@@ -43,7 +43,7 @@ public class Main extends Application {
         shapesMenuList = new ShapesSelector();
         shapesMenuList.addShape(new CircleCreator(gc, shapeList));
         shapesMenuList.addShape(new RectangleCreator(gc, shapeList));
-//        shapesMenuList.addShape(new Line(gc));
+        shapesMenuList.addShape(new LineCreator(gc, shapeList));
 
         menuBar.getMenus().add(menu);
         borderPane.setTop(menuBar);
