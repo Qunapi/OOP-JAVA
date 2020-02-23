@@ -17,7 +17,7 @@ public class RectangleCreator extends ShapeCreator {
     }
 
     public RectangleCreator(GraphicsContext gc, ShapesList shapeList) {
-        super(gc, shapeList);
+        super(gc);
         state = State.waiting;
         this.shapeList = shapeList;
     }

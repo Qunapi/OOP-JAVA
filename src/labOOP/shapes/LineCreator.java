@@ -17,7 +17,7 @@ public class LineCreator extends ShapeCreator {
     }
 
     public LineCreator(GraphicsContext gc, ShapesList shapeList) {
-        super(gc, shapeList);
+        super(gc);
         state = State.waiting;
         this.shapeList = shapeList;
     }

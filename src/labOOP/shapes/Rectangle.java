@@ -1,12 +1,11 @@
 package labOOP.shapes;
 
-import javafx.geometry.Point2D;
 import javafx.scene.canvas.GraphicsContext;
 
 public class Rectangle implements Shape {
     private Point firstPoint, secondPoint;
 
-    public Rectangle(Point firstPoint, Point secondPoint){
+    public Rectangle(Point firstPoint, Point secondPoint) {
         this.firstPoint = firstPoint;
         this.secondPoint = secondPoint;
     }

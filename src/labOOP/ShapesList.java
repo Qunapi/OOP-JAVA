@@ -14,10 +14,8 @@ public class ShapesList implements Serializable {
         shapesList = new ArrayList<Shape>();
     }
 
-
-
     public void draw(GraphicsContext gc) {
-        gc.clearRect(0,0,2000,2000);
+        gc.clearRect(0, 0, 2000, 2000);
         shapesList.forEach(shape -> shape.draw(gc));
     }
 

@@ -4,7 +4,6 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 import labOOP.ShapesList;
 
-
 public class CircleCreator extends ShapeCreator {
 
     enum State {waiting, centerSet}
@@ -18,7 +17,7 @@ public class CircleCreator extends ShapeCreator {
     }
 
     public CircleCreator(GraphicsContext gc, ShapesList shapeList) {
-        super(gc, shapeList);
+        super(gc);
         state = State.waiting;
         this.shapeList = shapeList;
     }

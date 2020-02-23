@@ -16,7 +16,7 @@ public class TrapeziumCreator extends ShapeCreator {
     }
 
     public TrapeziumCreator(GraphicsContext gc, ShapesList shapeList) {
-        super(gc, shapeList);
+        super(gc);
         state = State.waiting;
         this.shapeList = shapeList;
     }

@@ -27,7 +27,6 @@ public class Main extends Application {
         primaryStage.show();
 
         var menuBar = new MenuBar();
-        var button = new Button();
 
         var shapesMenu = new Menu("Shapes");
 

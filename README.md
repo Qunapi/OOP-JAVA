@@ -1,1 +1,3 @@
 # OOP-JAVA
+
+## Classes structure
