@@ -71,7 +71,6 @@ public class Main extends Application {
             newShapesList.shapesList.forEach(shape -> shapesList.add(shape, gc));
 
         } catch (Exception e) {
-            var a = 5;
         }
     }
 
@@ -83,10 +82,7 @@ public class Main extends Application {
             FileOutputStream fos = new FileOutputStream(f);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(shapesList);
-//            var a = 5;
-//            FileUtils.writeLines(new File("input.txt"), MenuArray)
         } catch (Exception e) {
-            var a = 5;
         }
     }
 }
