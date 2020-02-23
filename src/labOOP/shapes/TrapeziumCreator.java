@@ -4,19 +4,18 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 import labOOP.ShapesList;
 
-public class LineCreator extends ShapeCreator {
+public class TrapeziumCreator extends ShapeCreator {
+    enum State {waiting, firstPointSet, secondPointSet, thirdPointSet}
 
-    enum State {waiting, firstPointSet}
-
-    private Point firstPoint, secondPoint;
+    private Point firstPoint, secondPoint, thirdPoint, fourthPoint;
     private State state;
-    private String name = "Line";
+    private String name = "Trapezium";
 
     public String getName() {
         return name;
     }
 
-    public LineCreator(GraphicsContext gc, ShapesList shapeList) {
+    public TrapeziumCreator(GraphicsContext gc, ShapesList shapeList) {
         super(gc, shapeList);
         state = State.waiting;
         this.shapeList = shapeList;
@@ -31,7 +30,17 @@ public class LineCreator extends ShapeCreator {
             }
             case firstPointSet: {
                 secondPoint = new Point(e.getX(), e.getY());
-                var shape = new Line(firstPoint, secondPoint);
+                state = State.secondPointSet;
+                break;
+            }
+            case secondPointSet: {
+                thirdPoint = new Point(e.getX(), e.getY());
+                state = State.thirdPointSet;
+                break;
+            }
+            case thirdPointSet: {
+                fourthPoint = new Point(e.getX(), e.getY());
+                var shape = new Trapezium(firstPoint, secondPoint, thirdPoint, fourthPoint);
                 shapeList.add(shape, gc);
                 state = State.waiting;
                 break;

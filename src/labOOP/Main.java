@@ -9,50 +9,80 @@ import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import labOOP.shapes.*;
 
+import java.io.*;
+
 
 public class Main extends Application {
 
-    private Scene scene;
-    private MenuBar menuBar;
-    private Menu menu;
     private ShapesSelector shapesMenuList;
-    private Canvas canvas;
+    private ShapesList shapesList;
     private GraphicsContext gc;
-    private ShapesList shapeList;
 
-
-    @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Hello World");
-        shapeList = new ShapesList();
 
         var borderPane = new BorderPane();
-        scene = new Scene(borderPane, 640, 480);
+        var scene = new Scene(borderPane, 640, 480);
         primaryStage.setScene(scene);
         primaryStage.show();
 
-        menuBar = new MenuBar();
-        menu = new Menu("Shapes");
+        var menuBar = new MenuBar();
+        var button = new Button();
 
-        canvas = new Canvas(600, 600);
+        var shapesMenu = new Menu("Shapes");
+
+        var canvas = new Canvas(600, 600);
         gc = canvas.getGraphicsContext2D();
         canvas.setOnMouseClicked(mouseEvent -> {
             shapesMenuList.dispatch(mouseEvent);
         });
 
-        shapesMenuList = new ShapesSelector();
-        shapesMenuList.addShape(new CircleCreator(gc, shapeList));
-        shapesMenuList.addShape(new RectangleCreator(gc, shapeList));
-        shapesMenuList.addShape(new LineCreator(gc, shapeList));
+        shapesList = new ShapesList(gc);
 
-        menuBar.getMenus().add(menu);
+        var openBtn = new MenuItem("Open");
+        openBtn.setOnAction((e) -> openList());
+
+        var saveBtn = new MenuItem("Save");
+        saveBtn.setOnAction((e) -> saveList());
+
+        var serializationMenu = new Menu("Serialisation");
+        serializationMenu.getItems().addAll(saveBtn, openBtn);
+
+        shapesMenuList = new ShapesSelector();
+        shapesMenuList.addShape(new CircleCreator(gc, shapesList));
+        shapesMenuList.addShape(new RectangleCreator(gc, shapesList));
+        shapesMenuList.addShape(new LineCreator(gc, shapesList));
+        shapesMenuList.addShape(new TrapeziumCreator(gc, shapesList));
+
+        menuBar.getMenus().addAll(shapesMenu, serializationMenu);
         borderPane.setTop(menuBar);
-        menu.getItems().addAll(shapesMenuList.menuItems);
+        shapesMenu.getItems().addAll(shapesMenuList.menuItems);
 
         borderPane.setCenter(canvas);
     }
 
-    public static void main(String[] args) {
-        launch(args);
+    private void openList() {
+        var f = new File("data.list");
+        try {
+            var fis = new FileInputStream(f);
+            var oos = new ObjectInputStream(fis);
+
+            var newShapesList = (ShapesList) oos.readObject();
+            newShapesList.shapesList.forEach(shape -> shapesList.add(shape, gc));
+
+        } catch (Exception e) {
+        }
+    }
+
+    ;
+
+    private void saveList() {
+        File f = new File("data.list");
+        try {
+            FileOutputStream fos = new FileOutputStream(f);
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
+            oos.writeObject(shapesList);
+        } catch (Exception e) {
+        }
     }
 }

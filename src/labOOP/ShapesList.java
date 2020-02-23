@@ -1,33 +1,34 @@
 package labOOP;
 
-import javafx.beans.InvalidationListener;
-import javafx.beans.Observable;
+import javafx.scene.canvas.GraphicsContext;
 import labOOP.shapes.Shape;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ShapesList extends ArrayList<Shape> {
-    private List<Shape> shapesList;
+public class ShapesList implements Serializable {
+    public List<Shape> shapesList;
 
-    ShapesList() {
+    ShapesList(GraphicsContext gc) {
         shapesList = new ArrayList<Shape>();
     }
 
-    public void draw() {
-        shapesList.forEach(shape -> shape.draw());
+
+
+    public void draw(GraphicsContext gc) {
+        gc.clearRect(0,0,2000,2000);
+        shapesList.forEach(shape -> shape.draw(gc));
     }
 
-    public boolean add(Shape shape) {
+    public boolean add(Shape shape, GraphicsContext gc) {
         shapesList.add(shape);
-        draw();
+        draw(gc);
         return true;
     }
 
-    public void remove(Shape shape) {
+    public void remove(Shape shape, GraphicsContext gc) {
         shapesList.remove(shape);
-        draw();
+        draw(gc);
     }
-
-    public void invalidated (Observable o){}
 }

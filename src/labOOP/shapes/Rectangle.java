@@ -4,16 +4,14 @@ import javafx.geometry.Point2D;
 import javafx.scene.canvas.GraphicsContext;
 
 public class Rectangle implements Shape {
-    private Point2D firstPoint, secondPoint;
-    private GraphicsContext gc;
+    private Point firstPoint, secondPoint;
 
-    public Rectangle(Point2D firstPoint,Point2D secondPoint, GraphicsContext gc){
+    public Rectangle(Point firstPoint, Point secondPoint){
         this.firstPoint = firstPoint;
         this.secondPoint = secondPoint;
-        this.gc = gc;
     }
 
-    public void draw() {
+    public void draw(GraphicsContext gc) {
         var width = Math.abs(firstPoint.getX() - secondPoint.getX());
         var height = Math.abs(firstPoint.getY() - secondPoint.getY());
         var x = Math.min(firstPoint.getX(), secondPoint.getX());

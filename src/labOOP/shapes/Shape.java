@@ -2,10 +2,11 @@ package labOOP.shapes;
 
 import javafx.scene.canvas.GraphicsContext;
 
-public interface Shape {
-    GraphicsContext gc = null;
+import java.io.Serializable;
 
-    public void draw();
+public interface Shape extends Serializable{
+
+    public void draw(GraphicsContext gc);
 
 
 }

@@ -1,19 +1,16 @@
 package labOOP.shapes;
 
-import javafx.geometry.Point2D;
 import javafx.scene.canvas.GraphicsContext;
 
 public class Line implements Shape {
-    private Point2D firstPoint, secondPoint;
-    private GraphicsContext gc;
+    private Point firstPoint, secondPoint;
 
-    public Line(Point2D firstPoint, Point2D secondPoint, GraphicsContext gc) {
+    public Line(Point firstPoint, Point secondPoint) {
         this.firstPoint = firstPoint;
         this.secondPoint = secondPoint;
-        this.gc = gc;
     }
 
-    public void draw() {
+    public void draw(GraphicsContext gc) {
         gc.strokeLine(firstPoint.getX(), firstPoint.getY(), secondPoint.getX(), secondPoint.getY());
     }
 }
