@@ -19,7 +19,7 @@ public class Main extends Application {
     private GraphicsContext gc;
 
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("OOP");
 
         var borderPane = new BorderPane();
         var scene = new Scene(borderPane, 640, 480);
