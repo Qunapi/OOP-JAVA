@@ -15,7 +15,7 @@ public class ShapesList implements Serializable {
     }
 
     public void draw(GraphicsContext gc) {
-        gc.clearRect(0, 0, 2000, 2000);
+        gc.clearRect(0, 0,gc.getCanvas().getWidth(), gc.getCanvas().getHeight());
         shapesList.forEach(shape -> shape.draw(gc));
     }
 

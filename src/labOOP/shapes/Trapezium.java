@@ -13,11 +13,13 @@ public class Trapezium implements Shape {
     }
 
     public void draw(GraphicsContext gc) {
+        gc.beginPath();
         gc.moveTo(firstPoint.getX(), firstPoint.getY());
         gc.lineTo(secondPoint.getX(), secondPoint.getY());
         gc.lineTo(thirdPoint.getX(), thirdPoint.getY());
         gc.lineTo(fourthPoint.getX(), fourthPoint.getY());
         gc.lineTo(firstPoint.getX(), firstPoint.getY());
+        gc.closePath();
         gc.stroke();
     }
 }
