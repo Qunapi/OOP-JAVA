@@ -1,6 +1,7 @@
 package labOOP;
 
 import javafx.scene.control.MenuItem;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import labOOP.shapes.Shape;
 import labOOP.shapes.ShapeCreator;
@@ -25,7 +26,12 @@ public class ShapesSelector extends ArrayList<Shape> {
         });
     }
 
+    public void dispatch(KeyEvent e) {
+        if (selectedShapeCreator != null) selectedShapeCreator.dispatch(e);
+    }
+
     public void dispatch(MouseEvent e) {
         if (selectedShapeCreator != null) selectedShapeCreator.dispatch(e);
     }
+
 }

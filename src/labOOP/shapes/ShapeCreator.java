@@ -1,6 +1,7 @@
 package labOOP.shapes;
 
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import labOOP.ShapesList;
 
@@ -18,4 +19,5 @@ public abstract class ShapeCreator {
     }
 
     public abstract void dispatch(MouseEvent e);
+    public void dispatch(KeyEvent e){};
 }

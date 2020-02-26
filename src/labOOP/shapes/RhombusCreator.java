@@ -4,18 +4,18 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 import labOOP.ShapesList;
 
-public class TrapeziumCreator extends ShapeCreator {
-    enum State {waiting, firstPointSet, secondPointSet, thirdPointSet}
+public class RhombusCreator extends ShapeCreator {
+    enum State {waiting, firstPointSet, secondPointSet}
 
     private Point firstPoint, secondPoint, thirdPoint, fourthPoint;
     private State state;
-    private String name = "Trapezium";
+    private String name = "Rhombus";
 
     public String getName() {
         return name;
     }
 
-    public TrapeziumCreator(GraphicsContext gc, ShapesList shapeList) {
+    public RhombusCreator(GraphicsContext gc, ShapesList shapeList) {
         super(gc);
         state = State.waiting;
         this.shapeList = shapeList;
@@ -35,15 +35,22 @@ public class TrapeziumCreator extends ShapeCreator {
             }
             case secondPointSet: {
                 thirdPoint = new Point(e.getX(), e.getY());
-                state = State.thirdPointSet;
-                break;
-            }
-            case thirdPointSet: {
-                fourthPoint = new Point(e.getX(), e.getY());
-                var shape = new Trapezium(firstPoint, secondPoint, thirdPoint, fourthPoint);
+
+                var firstY = firstPoint.getY();
+                var secondY = secondPoint.getY();
+                var thirdY = thirdPoint.getY();
+
+                var firstX = firstPoint.getX();
+                var secondX = secondPoint.getX();
+                var thirdX = thirdPoint.getX();
+
+                var y = secondY + (firstY - secondY)  + (thirdY - secondY);
+                var x = secondX + (firstX - secondX)  + (thirdX - secondX);
+                var fourthPoint = new Point(x, y);
+
+                var shape = new Rhombus(firstPoint, secondPoint, thirdPoint, fourthPoint);
                 shapeList.add(shape, gc);
                 state = State.waiting;
-                break;
             }
         }
     }

@@ -14,7 +14,6 @@ import labOOP.shapes.*;
 import java.io.*;
 
 
-
 public class Main extends Application {
 
     private ShapesSelector shapesMenuList;
@@ -35,9 +34,8 @@ public class Main extends Application {
 
         var canvas = new Canvas(600, 600);
         gc = canvas.getGraphicsContext2D();
-        canvas.setOnMouseClicked(mouseEvent -> {
-            shapesMenuList.dispatch(mouseEvent);
-        });
+        canvas.setOnMouseClicked(mouseEvent -> shapesMenuList.dispatch(mouseEvent));
+        scene.setOnKeyReleased(keyEvent -> shapesMenuList.dispatch(keyEvent));
 
         shapesList = new ShapesList(gc);
 
@@ -58,7 +56,7 @@ public class Main extends Application {
 
         for (ClassInfo routeClassInfo : scanResult.getSubclasses(ShapeCreator.class.getName())) {
             Class da2 = Class.forName(routeClassInfo.getName());
-            var shapeCreator = (ShapeCreator)da2.getDeclaredConstructor(GraphicsContext.class, ShapesList.class).newInstance(gc, shapesList);
+            var shapeCreator = (ShapeCreator) da2.getDeclaredConstructor(GraphicsContext.class, ShapesList.class).newInstance(gc, shapesList);
             shapesMenuList.addShape(shapeCreator);
         }
 
