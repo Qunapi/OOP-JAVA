@@ -1,5 +1,6 @@
 package labOOP;
 
+import io.github.classgraph.*;
 import javafx.application.Application;
 import javafx.scene.*;
 import javafx.scene.canvas.Canvas;
@@ -9,7 +10,9 @@ import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import labOOP.shapes.*;
 
+
 import java.io.*;
+
 
 
 public class Main extends Application {
@@ -48,15 +51,20 @@ public class Main extends Application {
         serializationMenu.getItems().addAll(saveBtn, openBtn);
 
         shapesMenuList = new ShapesSelector();
-        shapesMenuList.addShape(new CircleCreator(gc, shapesList));
-        shapesMenuList.addShape(new RectangleCreator(gc, shapesList));
-        shapesMenuList.addShape(new LineCreator(gc, shapesList));
-        shapesMenuList.addShape(new TrapeziumCreator(gc, shapesList));
+
+        ScanResult scanResult = new ClassGraph()
+                .enableClassInfo()
+                .scan();
+
+        for (ClassInfo routeClassInfo : scanResult.getSubclasses(ShapeCreator.class.getName())) {
+            Class da2 = Class.forName(routeClassInfo.getName());
+            var shapeCreator = (ShapeCreator)da2.getDeclaredConstructor(GraphicsContext.class, ShapesList.class).newInstance(gc, shapesList);
+            shapesMenuList.addShape(shapeCreator);
+        }
 
         menuBar.getMenus().addAll(shapesMenu, serializationMenu);
         borderPane.setTop(menuBar);
         shapesMenu.getItems().addAll(shapesMenuList.menuItems);
-
         borderPane.setCenter(canvas);
     }
 

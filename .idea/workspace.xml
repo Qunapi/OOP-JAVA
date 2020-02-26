@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/labOOP/ShapesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/labOOP/ShapesList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/labOOP/shapes/Trapezium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/labOOP/shapes/Trapezium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/labOOP/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/labOOP/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +84,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -91,10 +92,16 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="Repository.Attach.Annotations" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/labOOP/shapes" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="ide.date.format" />
@@ -205,7 +212,8 @@
       <workItem from="1582480573459" duration="2708000" />
       <workItem from="1582562257267" duration="1793000" />
       <workItem from="1582636238559" duration="2271000" />
-      <workItem from="1582655688259" duration="1078000" />
+      <workItem from="1582655688259" duration="6148000" />
+      <workItem from="1582723250893" duration="1723000" />
     </task>
     <servers />
   </component>
@@ -245,46 +253,54 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="731" y="447" width="518" height="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/70.27.1850.1053@70.27.1850.1053" timestamp="1582441322647" />
-    <state width="1804" height="340" key="GridCell.Tab.0.bottom" timestamp="1582656769720">
+    <state x="622" y="300" width="735" height="520" key="FileChooserDialogImpl" timestamp="1582657817477">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1582656769720" />
-    <state width="1804" height="340" key="GridCell.Tab.0.center" timestamp="1582656769719">
+    <state x="622" y="300" width="735" height="520" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1582657817477" />
+    <state width="1804" height="336" key="GridCell.Tab.0.bottom" timestamp="1582724966420">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1582656769719" />
-    <state width="1804" height="340" key="GridCell.Tab.0.left" timestamp="1582656769719">
+    <state width="1804" height="336" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1582724966420" />
+    <state width="1804" height="336" key="GridCell.Tab.0.center" timestamp="1582724966419">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1582656769719" />
-    <state width="1804" height="340" key="GridCell.Tab.0.right" timestamp="1582656769720">
+    <state width="1804" height="336" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1582724966419" />
+    <state width="1804" height="336" key="GridCell.Tab.0.left" timestamp="1582724966419">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1582656769720" />
-    <state width="1804" height="340" key="GridCell.Tab.1.bottom" timestamp="1582656769518">
+    <state width="1804" height="336" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1582724966419" />
+    <state width="1804" height="336" key="GridCell.Tab.0.right" timestamp="1582724966419">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.1.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1582656769518" />
-    <state width="1804" height="340" key="GridCell.Tab.1.center" timestamp="1582656769518">
+    <state width="1804" height="336" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1582724966419" />
+    <state width="1804" height="340" key="GridCell.Tab.1.bottom" timestamp="1582724807838">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.1.center/70.27.1850.1053@70.27.1850.1053" timestamp="1582656769518" />
-    <state width="1804" height="340" key="GridCell.Tab.1.left" timestamp="1582656769517">
+    <state width="1804" height="340" key="GridCell.Tab.1.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1582724807838" />
+    <state width="1804" height="340" key="GridCell.Tab.1.center" timestamp="1582724807838">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.1.left/70.27.1850.1053@70.27.1850.1053" timestamp="1582656769517" />
-    <state width="1804" height="340" key="GridCell.Tab.1.right" timestamp="1582656769518">
+    <state width="1804" height="340" key="GridCell.Tab.1.center/70.27.1850.1053@70.27.1850.1053" timestamp="1582724807838" />
+    <state width="1804" height="340" key="GridCell.Tab.1.left" timestamp="1582724807837">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.1.right/70.27.1850.1053@70.27.1850.1053" timestamp="1582656769518" />
-    <state x="484" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1582441403605">
+    <state width="1804" height="340" key="GridCell.Tab.1.left/70.27.1850.1053@70.27.1850.1053" timestamp="1582724807837" />
+    <state width="1804" height="340" key="GridCell.Tab.1.right" timestamp="1582724807838">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="484" y="188" width="1022" height="737" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1582441403605" />
-    <state x="659" y="252" key="run.anything.popup" timestamp="1582468952134">
+    <state width="1804" height="340" key="GridCell.Tab.1.right/70.27.1850.1053@70.27.1850.1053" timestamp="1582724807838" />
+    <state x="484" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1582660478447">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="659" y="252" key="run.anything.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1582468952134" />
+    <state x="484" y="188" width="1022" height="737" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1582660478447" />
+    <state x="667" y="452" width="646" height="231" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1582660327181">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="667" y="452" width="646" height="231" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/70.27.1850.1053@70.27.1850.1053" timestamp="1582660327181" />
+    <state x="659" y="252" key="run.anything.popup" timestamp="1582723301125">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="659" y="252" key="run.anything.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1582723301125" />
     <state x="658" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1582473131998">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
