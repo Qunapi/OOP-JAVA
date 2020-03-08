@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Shapes:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Shapes_jar</output-path>
+    <root id="archive" name="Shapes.jar">
+      <element id="module-output" name="Shapes" />
+    </root>
+  </artifact>
+</component>

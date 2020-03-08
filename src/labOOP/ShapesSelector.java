@@ -1,10 +1,10 @@
 package labOOP;
 
+import Shapes.Shape;
+import Shapes.ShapeCreator;
 import javafx.scene.control.MenuItem;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
-import labOOP.shapes.Shape;
-import labOOP.shapes.ShapeCreator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +13,8 @@ public class ShapesSelector extends ArrayList<Shape> {
 
     List<MenuItem> menuItems;
     ShapeCreator selectedShapeCreator;
+
+
 
     ShapesSelector() {
         menuItems = new ArrayList();

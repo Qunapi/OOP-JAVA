@@ -1,4 +1,4 @@
-package labOOP.shapes;
+package Shapes;
 
 import java.io.Serializable;
 

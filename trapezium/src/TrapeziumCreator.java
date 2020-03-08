@@ -1,8 +1,8 @@
-package labOOP.shapes;
-
+import Shapes.Point;
+import Shapes.ShapeCreator;
+import Shapes.ShapesList;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
-import labOOP.ShapesList;
 
 public class TrapeziumCreator extends ShapeCreator {
     enum State {waiting, firstPointSet, secondPointSet, thirdPointSet}

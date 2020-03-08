@@ -1,9 +1,8 @@
-package labOOP.shapes;
+package Shapes;
 
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
-import labOOP.ShapesList;
 
 public abstract class ShapeCreator {
     protected GraphicsContext gc;
@@ -14,7 +13,7 @@ public abstract class ShapeCreator {
         return this.name;
     }
 
-    ShapeCreator(GraphicsContext context) {
+    public ShapeCreator(GraphicsContext context) {
         gc = context;
     }
 

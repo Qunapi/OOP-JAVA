@@ -1,5 +1,7 @@
 package labOOP.shapes;
 
+import Shapes.Point;
+import Shapes.Shape;
 import javafx.scene.canvas.GraphicsContext;
 
 public class Line implements Shape {

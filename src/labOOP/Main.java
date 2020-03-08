@@ -1,5 +1,7 @@
 package labOOP;
 
+import Shapes.ShapeCreator;
+import Shapes.ShapesList;
 import io.github.classgraph.*;
 import javafx.application.Application;
 import javafx.scene.*;
@@ -8,11 +10,8 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
-import labOOP.shapes.*;
-
 
 import java.io.*;
-
 
 public class Main extends Application {
 

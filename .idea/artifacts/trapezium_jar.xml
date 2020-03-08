@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="trapezium:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/trapezium_jar</output-path>
+    <root id="archive" name="trapezium.jar">
+      <element id="module-output" name="trapezium" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/out/artifacts/Shapes_jar/Shapes.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

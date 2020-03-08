@@ -1,4 +1,4 @@
-package labOOP.shapes;
+package Shapes;
 
 import javafx.scene.canvas.GraphicsContext;
 

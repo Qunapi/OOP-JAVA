@@ -1,11 +1,13 @@
 
 package labOOP.shapes;
 
+import Shapes.Point;
+import Shapes.ShapeCreator;
+import Shapes.ShapesList;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
-import labOOP.ShapesList;
 
 import java.util.ArrayList;
 

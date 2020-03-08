@@ -1,6 +1,8 @@
 
 package labOOP.shapes;
 
+import Shapes.Point;
+import Shapes.Shape;
 import javafx.scene.canvas.GraphicsContext;
 
 import java.util.ArrayList;

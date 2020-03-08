@@ -1,7 +1,7 @@
-package labOOP;
+package Shapes;
 
+import Shapes.Shape;
 import javafx.scene.canvas.GraphicsContext;
-import labOOP.shapes.Shape;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import java.util.List;
 public class ShapesList implements Serializable {
     public List<Shape> shapesList;
 
-    ShapesList(GraphicsContext gc) {
+    public ShapesList(GraphicsContext gc) {
         shapesList = new ArrayList<Shape>();
     }
 
